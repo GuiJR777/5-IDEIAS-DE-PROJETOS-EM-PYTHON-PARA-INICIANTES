@@ -27,12 +27,12 @@ def lanca_dado(tipo, quantidade_de_dados):
     if lancamentos > 1:
         for dado in range(lancamentos):
             resultado = random.randint(1, valor_max)
-            print(resultado)
+            print(f'Esse dado deu: {resultado}')
             resultados.append(resultado)
             retorno = resultados
     else:
         resultado = random.randint(1, valor_max)
-        print(resultado)
+        print(f'Esse dado deu: {resultado}')
         retorno = resultado
     
     return retorno
