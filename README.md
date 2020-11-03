@@ -14,7 +14,4 @@ Dentro de cada arquivo a um comentário detalhando o objetivo e diretrizes de ca
 ### Até agora...
 
 - Simulador de Dados feito: Implementado 7 tipos de dados de RPG, D4, D6, D8, D10, D12, D20 e D100 com quantidades elegiveis.
-<<<<<<< HEAD
 - Chute o número feito: Implementado sistema de pontuação por rodada atrelada a tentativas e pontuação geral.
-=======
->>>>>>> e24ba80214ea773273a99dad65aa413019da7545
