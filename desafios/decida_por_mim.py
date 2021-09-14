@@ -1,5 +1,6 @@
 '''3. DECIDA POR MIM
-Objetivo: Crie um script que responda qualquer pergunta que for feita a ele. Recomendo ter uma base de possíveis respostas (10-20 ou mais). Ex: Será que devo sair de casa hoje? Seu script reponde: “Sim, vai lá!”
+Objetivo: Crie um script que responda qualquer pergunta que for feita a ele. Recomendo ter uma base de possíveis respostas (10-20 ou mais). 
+Ex: Será que devo sair de casa hoje? Seu script reponde: “Sim, vai lá!”
 
 Detalhes e boas Práticas:
 
@@ -16,16 +17,18 @@ Geração de valores
 import random
 from time import sleep
 
+
 def converte_em_lista(arquivo, lista):
     with open(arquivo, 'r', encoding='UTF8') as texto:
         for linha in texto:
-            lista.append(str(linha).replace('\n',''))
+            lista.append(str(linha).replace('\n', ''))
         return lista
         # print(lista)
 
+
 frases = []
 
-frases = converte_em_lista('ditados.txt',frases)
+frases = converte_em_lista('ditados.txt', frases)
 
 # Inicio do programa
 print('Olá, qual é o seu nome?')
@@ -53,11 +56,10 @@ while jogar == True:
                 perguntas.append(pergunta)
                 sleep(2)
                 print('Hummm...')
-                for i in range (5):
+                for i in range(5):
                     print('...')
                     sleep(1)
-                numero_aleatório = random.randint(0, len(frases))
-                resposta = frases[int(numero_aleatório)]
+                resposta = frases[random.randint(0, len(frases))]
                 print(resposta)
                 sleep(5)
         elif resposta == 2:
